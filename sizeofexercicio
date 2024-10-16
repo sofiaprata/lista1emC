@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+//Exercicio de sala (sizeof)
+void calculartamanho(){
+
+  printf("int: %lu\n", sizeof(int));
+  printf("float: %lu\n", sizeof(float));
+  printf("Double: %lu\n", sizeof(double));
+  printf("Long Double: %lu\n", sizeof(long double));
+  printf("Unsigned int: %lu\n", sizeof(unsigned int));
+  printf("Signed int: %lu\n", sizeof(signed int));
+  printf("Short int: %lu\n", sizeof(short int));
+  printf("unsigned short int: %lu\n", sizeof(unsigned short int));
+  printf("Signed short int: %lu\n", sizeof(signed short int));
+  printf("long int: %lu\n", sizeof(long int));
+  printf("Signed long int: %lu\n", sizeof(signed long int));
+  printf("Unsigned long int: %lu\n", sizeof(unsigned long int));
+}
