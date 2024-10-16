@@ -124,6 +124,46 @@ void calculardoisnumeros(){
   printf("A soma dos dois números é %d, o produto é %d, a diferença é %d, o quociente é %d e o resto é %d.\n", numero1 + numero2, numero1 * numero2, numero1 - numero2, numero1/numero2, numero1 % numero2);
 }
 
+//Questao 12.Escreva um programa que leia duas variáveis A e B e efetue a troca dos valores. O objetivo é que a variável A passe a conter o valor de B e a variável B passe a possuir o valor de A. Apresente os valores após a efetivação do processamento da troca.
+
+void trocarduasvariaveis(){
+  int a,b,c;
+  printf("Digite o valor da variável A: \n");
+  scanf("%d", &a);
+  printf("Digite o valor da variável B: \n");
+  scanf("%d", &b);
+  c = a;
+  a = b;
+  b = c;
+  printf("O valor da variável A agora é %d e o valor de B é %d.\n", a,b);
+}
+
+//Questao 13. Escreva um programa que leia uma temperatura em graus Celsius e apresente convertida em graus Fahrenheit. A fórmula de versão é F = (9 * C + 160) / 5, sendo F a temperatura Fahrenheit e C a temperatura em Celsius.
+
+
+void conversorcelsiusfahrenheit(){
+  float temperatura;
+  printf("Digite o valor da temperatura em Celsius: \n");
+  scanf("%f", &temperatura);
+  printf("A temperatura em Fahrenheit é: %.2f\n", (9 * temperatura + 160)/5);
+}
+
+//Questao 15.Desenvolva um programa que calcule o salario liquido de um professor. Para elaborar o programa, é necessário possuir alguns dados, tais como o valor da hora aula, número de horas trabalhadas no mês e percentual de desconto do INSS. Em primeiro lugar, deve-se estabelecer o seu salário bruto para fazer o desconto e ter o valor do salario liquido. Obs.: o programa deve informar o salario bruto e salario liquido do professor.
+
+void calcularsalarioliquido(){
+  float valorhora, desconto, salariobruto;
+  int horasmes;
+  printf("Digite o valor da hora aula: \n");
+  scanf("%F", &valorhora);
+  printf("Digite o número de horas trabalhadas por mês: \n");
+  scanf("%d", &horasmes);
+  printf("Digite o percentual de desconto do INSS: \n");
+  scanf("%f", &desconto);
+  salariobruto = valorhora * horasmes;
+  printf("O salário bruto é: %.2f \n", salariobruto);
+  printf("O valor do salário liquido é: %.2f \n", salariobruto - (salariobruto * desconto/100));
+}
+
 int main() {
   calculardoisnumeros();
   return 0;
