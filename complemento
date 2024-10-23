@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+void calcularcomplemento(){
+  int x = 135, y; //declarei um complemento 1, no qual o x é positivo
+  y = ~x + 1; // declarei um complemento 2, no qual o y é negativo
+  printf("x = %d\ny = %d\n", x,y);
+}
