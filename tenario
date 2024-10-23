@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void imprimirimparoupar(){
+  int x = 2;
+  (x%2)?puts("impar"):puts("par");
+  //se x for divisivel por 2, então o resto da divisão por 2 é 0, ou seja, x é par, caso contrário, x é impar.
+}
+
+void teste(){
+  int x = 3;
+  x *= (x%2)?3:1;
+  printf("%d", x);
+  //se x não for divisivel por 2, então x vai multiplicar por 3, senão, vai continuar sendo ele mesmo
+}
