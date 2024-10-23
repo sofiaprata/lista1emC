@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void calcularbitabit(){
+  unsigned char codigo = 14;
+  unsigned char posicao = 3;
+  unsigned char mascara = 0x01;
+
+  //processamento
+  codigo = codigo ^ (mascara << (posicao-1));
+
+  printf("Código atualizado: %hhu\n", codigo);
+}
+
+void calcularbitabitligar(){
+  unsigned char codigo = 10; // numero em binario:00001010
+  unsigned char posicao;
+  unsigned char mascara = 0x01; // 00000001
+
+  puts("Digite a posição que deseja ligar: ");
+  scanf("%hhu", &posicao);
+
+  //processamento
+  codigo = codigo | (mascara << (posicao-1)); // ou = |, se fosse desligar ser uma porta and = & e um not = ~
+
+  printf("Código atualizado: %hhu\n", codigo);
+}
+
